@@ -1,4 +1,4 @@
-import mongoose, {Schema, SchemaType} from "mongoose";
+import mongoose, {Schema} from "mongoose";
 
 
 const subscriptionSchema = new Schema({
@@ -8,7 +8,7 @@ const subscriptionSchema = new Schema({
     },
     channel: {
 
-        type: Schema.Types.ObjectId, // one to whom 'subscriber' is subscribing (client)
+        type: Schema.Types.ObjectId, // one to whom 'subscriber' is subscribing 
         ref: "User"
     },
 
